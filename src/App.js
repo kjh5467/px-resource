@@ -1,64 +1,74 @@
 import React from "react";
+
 import "./App.css";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Link } from "@material-ui/core";
+import SideBar from "./components/SideBar";
 import NpmTable from "./components/NpmTable";
 import DesignTable from "./components/DesignTable";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
-          <Typography variant="h6" color="Inherit">
+          <Typography variant="h6" color="inherit">
             Resources
           </Typography>
         </Toolbar>
       </AppBar>
-      <h1 id="powerxpertblueresources">Power Xpert Blue Resources</h1>
-      <p>
+      <SideBar />
+      <Typography variant="h4" color="Primary" id="powerxpertblueresources">
+        Power Xpert Blue Resources
+      </Typography>
+      <Typography variant="body1">
         Power Xpert Blue offers a number of resources for developers, available
         through{" "}
-        <a
-          href="https://www.npmjs.com/org/pxblue"
+        <Link
+          href={"https://www.npmjs.com/org/pxblue"}
           target="_blank"
           rel="noopener noreferrer"
         >
           NPM
-        </a>{" "}
+        </Link>{" "}
         and{" "}
-        <a
+        <Link
           href="https://github.com/pxblue"
           target="_blank"
           rel="noopener noreferrer"
         >
           Github
-        </a>
+        </Link>
         . These include utility packages as well as sample code/design pattern
         examples.
-      </p>
-      <h2 id="npmpackages">NPM Packages</h2>
-      <p>
+      </Typography>
+      <Typography variant="h4" color="primary" id="npmpackages">
+        NPM Packages
+      </Typography>
+      <Typography variant="body1">
         The following table shows the current status for PX Blue resources
         available through NPM.
-      </p>
+      </Typography>
       <NpmTable />
       <p>
         <br />
       </p>
-      <h2 id="designpatternsexamples">Design Patterns / Examples</h2>
-      <p>
+      <Typography variant="h4" color="primary" id="designpatternsexamples">
+        Design Patterns / Examples
+      </Typography>
+      <Typography variant="body1">
         The following table shows the current status of the PX Blue design
         pattern code samples available from GitHub and{" "}
-        <a
+        <Link
           href="https://stackblitz.com/@px-blue"
           target="_blank"
           rel="noopener noreferrer"
         >
           StackBlitz
-        </a>
-        .
-      </p>
+        </Link>
+      </Typography>
       <DesignTable />
+      <Footer />
     </div>
   );
 }

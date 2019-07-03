@@ -1,0 +1,478 @@
+[
+  {
+    "id": "action-list",
+    "repository": "https://github.com/pxblue/action-list",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/action-list/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/action-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/action-list/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/action-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/action-list/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/action-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/action-list/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/action-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/action-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/action-list/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-action-list-angular",
+      "https://stackblitz.com/edit/pxblue-action-list-react"
+    ]
+  },
+  {
+    "id": "bottomsheet",
+    "repository": "https://github.com/pxblue/bottomsheet",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/bottomsheet/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/bottomsheet/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/bottomsheet/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/bottomsheet/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/bottomsheet/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/bottomsheet/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/bottomsheet/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/bottomsheet/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/bottomsheet/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/bottomsheet/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-bottomsheet-angular",
+      "https://stackblitz.com/edit/pxblue-bottomsheet-react"
+    ]
+  },
+  {
+    "id": "collapsible-appbar",
+    "repository": "https://github.com/pxblue/collapsible-appbar",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/collapsible-appbar/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/collapsible-appbar/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/collapsible-appbar/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/collapsible-appbar/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/collapsible-appbar/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/collapsible-appbar/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/collapsible-appbar/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/collapsible-appbar/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/collapsible-appbar/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-collapsible-appbar-angular",
+      "https://stackblitz.com/edit/pxblue-collapsible-appbar-react"
+    ]
+  },
+  {
+    "id": "complex-bottomsheet",
+    "repository": "https://github.com/pxblue/complex-bottomsheet",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/complex-bottomsheet/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/complex-bottomsheet/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/complex-bottomsheet/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/complex-bottomsheet/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/complex-bottomsheet/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/complex-bottomsheet/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/complex-bottomsheet/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/complex-bottomsheet/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/complex-bottomsheet/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/complex-bottomsheet/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-complex-bottomsheet-angular",
+      "https://stackblitz.com/edit/pxblue-complex-bottomsheet-react"
+    ]
+  },
+  {
+    "id": "data-list",
+    "repository": "https://github.com/pxblue/data-list",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/data-list/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/data-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/data-list/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/data-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/data-list/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/data-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/dynamic-stepper/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/data-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/data-list/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-data-list-angular",
+      "https://stackblitz.com/edit/pxblue-data-list-react"
+    ]
+  },
+  {
+    "id": "dynamic-stepper",
+    "repository": "https://github.com/pxblue/dynamic-stepper",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/dynamic-stepper/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/dynamic-stepper/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/dynamic-stepper/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/dynamic-stepper/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/dynamic-stepper/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/dynamic-stepper/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/dynamic-stepper/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/dynamic-stepper/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-dynamic-stepper-angular",
+      "https://stackblitz.com/edit/pxblue-dynamic-stepper-react"
+    ]
+  },
+  {
+    "id": "icon-navigation",
+    "repository": "https://github.com/pxblue/icon-navigation",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/icon-navigation/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/icon-navigation/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/icon-navigation/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/icon-navigation/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/icon-navigation/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/icon-navigation/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/icon-navigation/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/icon-navigation/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/icon-navigation/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/icon-navigation/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-icon-navigation-angular",
+      "https://stackblitz.com/edit/pxblue-icon-navigation-react"
+    ]
+  },
+  {
+    "id": "login",
+    "repository": "https://github.com/pxblue/login",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/login/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/login/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/login/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/login/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/login/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/login/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/login/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/login/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/login/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/login/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-login-angular",
+      "https://stackblitz.com/edit/pxblue-login-react"
+    ]
+  },
+  {
+    "id": "multiselect-list",
+    "repository": "https://github.com/pxblue/multiselect-list",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/multiselect-list/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/multiselect-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/multiselect-list/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/multiselect-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/multiselect-list/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/multiselect-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/multiselect-list/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/multiselect-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/multiselect-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/multiselect-list/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-multiselect-angular",
+      "https://stackblitz.com/edit/pxblue-multiselect-react"
+    ]
+  },
+  {
+    "id": "responsive-table",
+    "repository": "https://github.com/pxblue/responsive-table",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/responsive-table/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/responsive-table/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/responsive-table/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/responsive-table/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/responsive-table/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/responsive-table/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/responsive-table/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/responsive-table/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/responsive-table/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/responsive-table/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-responsive-table-angular",
+      "https://stackblitz.com/edit/pxblue-responsive-table-react"
+    ]
+  },
+  {
+    "id": "search-bar",
+    "repository": "https://github.com/pxblue/search-bar",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/search-bar/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/search-bar/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/search-bar/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/search-bar/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/search-bar/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/search-bar/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/search-bar/tree/react",
+        "img": "https://github.com/pxblue/search-bar/tree/react"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/search-bar/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/search-bar/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-search-bar-angular",
+      "https://stackblitz.com/edit/pxblue-search-bar-react"
+    ]
+  },
+  {
+    "id": "side-navigation",
+    "repository": "https://github.com/pxblue/side-navigation",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/side-navigation/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/side-navigation/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/side-navigation/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/side-navigation/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/side-navigation/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/side-navigation/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/side-navigation/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/side-navigation/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/side-navigation/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/side-navigation/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-side-navigation-angular",
+      "https://stackblitz.com/edit/pxblue-side-navigation-react"
+    ]
+  },
+  {
+    "id": "sortable-list",
+    "repository": "https://github.com/pxblue/sortable-list",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/sortable-list/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/sortable-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/sortable-list/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/sortable-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/sortable-list/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/sortable-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/sortable-list/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/sortable-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/sortable-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/sortable-list/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-sortable-list-angular",
+      "https://stackblitz.com/edit/pxblue-sortable-list-react"
+    ]
+  },
+  {
+    "id": "status-list",
+    "repository": "https://github.com/pxblue/status-list",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/status-list/tree/angular",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/status-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://circleci.com/gh/pxblue/status-list/tree/react",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/status-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/status-list/tree/angular",
+        "img": "https://img.shields.io/github/last-commit/pxblue/status-list/angular.svg?label=Angular&style=flat"
+      },
+      {
+        "link": "https://github.com/pxblue/status-list/tree/react",
+        "img": "https://img.shields.io/github/last-commit/pxblue/status-list/react.svg?label=React&style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/status-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "image": "https://img.shields.io/github/issues/pxblue/status-list/bug.svg?style=flat&label=bugs"
+      }
+    ],
+    "example": [
+      "https://stackblitz.com/edit/pxblue-status-list-angular",
+      "https://stackblitz.com/edit/pxblue-status-list-react"
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+    {
+        "id": "colors",
+        "repository": "https://github.com/pxblue/colors/tree/master",
+        "npm": [{"link":"https://www.npmjs.com/package/@pxblue/colors",
+                "img":"https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat"},
+                {
+                 "link": "https://www.npmjs.com/package/@pxblue/colors-branding",
+                 "img": "https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&amp;style=flat"
+                }],
+        "description": "This repository contains definitions for various colors used
+        throughout PX Blue applications.",
+        "status": [{"link": "https://circleci.com/gh/pxblue/colors/tree/master",
+            "img": "https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat"}],
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    },
+    {
+        "id": "",
+        "repository": "",
+        "npm": "",
+        "description": "",
+        "status": "",
+        "updated": "",
+        "issues": "" 
+    }
+]
