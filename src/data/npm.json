@@ -1,72 +1,225 @@
 [
-    {
-        "id": "colors",
-        "repository": "https://github.com/pxblue/colors/tree/master",
-        "npm": [{"link":"https://www.npmjs.com/package/@pxblue/colors",
-                "img":"https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat"},
-                {
-                 "link": "https://www.npmjs.com/package/@pxblue/colors-branding",
-                 "img": "https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&amp;style=flat"
-                }],
-        "description": "This repository contains definitions for various colors used
-        throughout PX Blue applications.",
-        "status": [{"link": "https://circleci.com/gh/pxblue/colors/tree/master",
-            "img": "https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat"}],
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    },
-    {
-        "id": "",
-        "repository": "",
-        "npm": "",
-        "description": "",
-        "status": "",
-        "updated": "",
-        "issues": "" 
-    }
+  {
+    "id": "colors",
+    "repository": "https://github.com/pxblue/colors/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/colors",
+        "img": "https://img.shields.io/npm/v/@pxblue/colors.svg?label=@pxblue/colors&amp;style=flat"
+      },
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/colors-branding",
+        "img": "https://img.shields.io/npm/v/@pxblue/colors-branding.svg?label=@pxblue/colors-branding&amp;style=flat"
+      }
+    ],
+    "description": "This repository contains definitions for various colors used throughout PX Blue applications.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/colors/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/colors/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/colors.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/colors/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "img": "https://img.shields.io/github/issues/pxblue/colors/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  },
+  {
+    "id": "highcharts",
+    "repository": "https://github.com/pxblue/colors/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/highcharts",
+        "img": "https://img.shields.io/npm/v/@pxblue/highcharts.svg?label=@pxblue/highcharts&style=flat"
+      }
+    ],
+    "description": "This repository contains definitions for various colors used throughout PX Blue applications.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/colors/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/colors/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/highcharts/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/highcharts.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/highcharts/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/highcharts.svg?style=flat"
+      }
+    ]
+  },
+  {
+    "id": "icons",
+    "repository": "https://github.com/pxblue/icons/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/icons",
+        "img": "https://img.shields.io/npm/v/@pxblue/icons.svg?label=@pxblue/icons&style=flat"
+      },
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/icons-svg",
+        "img": "https://img.shields.io/npm/v/@pxblue/icons-svg.svg?label=@pxblue/icons-svg&style=flat"
+      },
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/ng-progress-icons",
+        "img": "https://img.shields.io/npm/v/@pxblue/ng-progress-icons.svg?label=@pxblue/ng-progress-icons&style=flat"
+      },
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/react-progress-icons",
+        "img": "https://img.shields.io/npm/v/@pxblue/react-progress-icons.svg?label=@pxblue/react-progress-icons&style=flat"
+      },
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/symbols",
+        "img": "https://img.shields.io/npm/v/@pxblue/symbols.svg?label=@pxblue/symbols&style=flat"
+      }
+    ],
+    "description": "This is a library of supplemental icons, to be used in conjunction with the standard Material Design icons in PX Blue applications.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/icons/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/icons/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/icons/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/icons.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/icons/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "img": "https://img.shields.io/github/issues/pxblue/icons/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  },
+  {
+    "id": "icons-mui",
+    "repository": "https://github.com/pxblue/icons-mui/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/icons-mui",
+        "img": "https://img.shields.io/npm/v/@pxblue/icons-mui.svg?label=@pxblue/icons-mui&style=flat"
+      }
+    ],
+    "description": "This library contains componentized svg icons from @pxblue/icons for for use in React applications using Material UI. The icons are made available in the same way that Material UI exposes the Material Icons.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/icons-mui/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/icons-mui/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/icons-mui/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/icons-mui.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://img.shields.io/github/last-commit/pxblue/icons-mui.svg?style=flat",
+        "img": "https://img.shields.io/github/issues/pxblue/icons-mui/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  },
+  {
+    "id": "mapbox",
+    "repository": "https://github.com/pxblue/mapbox/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/mapbox",
+        "img": "https://img.shields.io/npm/v/@pxblue/mapbox.svg?label=@pxblue/mapbox&style=flat"
+      }
+    ],
+    "description": "This package contains various Mapbox themes for use with PX Blue.</td>",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/mapbox/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/mapbox/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/mapbox/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/mapbox.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/mapbox/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "img": "https://img.shields.io/github/issues/pxblue/mapbox/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  },
+  {
+    "id": "symbols-mui",
+    "repository": "https://github.com/pxblue/symbols-mui/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/symbols-mui",
+        "img": "https://img.shields.io/npm/v/@pxblue/symbols-mui.svg?label=@pxblue/symbols-mui&style=flat"
+      }
+    ],
+    "description": "This library contains componentized svg symbols from @pxblue/symbols for use in React applications using Material UI. The symbols are made available in the same way that Material UI exposes the Material Icons.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/symbols-mui/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/symbols-mui/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/symbols-mui/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/symbols-mui.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/symbols-mui/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "img": "https://img.shields.io/github/issues/pxblue/symbols-mui/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  },
+  {
+    "id": "themes",
+    "repository": "https://github.com/pxblue/themes/tree/master",
+    "npm": [
+      {
+        "link": "https://www.npmjs.com/package/@pxblue/themes",
+        "img": "https://img.shields.io/npm/v/@pxblue/themes.svg?label=@pxblue/themes&style=flat"
+      }
+    ],
+    "description": "This package provides theming support for Eaton applications using the PX Blue design system. It includes resources for developers using: Angular w/ Angular MaterialReact w/ Material UIThe PX Blue themes package comes with two theme options: a Blue theme (standard) and a Dark theme.",
+    "status": [
+      {
+        "link": "https://circleci.com/gh/pxblue/themes/tree/master",
+        "img": "https://img.shields.io/circleci/project/github/pxblue/themes/master.svg?style=flat"
+      }
+    ],
+    "updated": [
+      {
+        "link": "https://github.com/pxblue/themes/tree/master",
+        "img": "https://img.shields.io/github/last-commit/pxblue/themes.svg?style=flat"
+      }
+    ],
+    "issues": [
+      {
+        "link": "https://github.com/pxblue/themes/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
+        "img": "https://img.shields.io/github/issues/pxblue/themes/bug.svg?style=flat&label=bugs"
+      }
+    ]
+  }
 ]
