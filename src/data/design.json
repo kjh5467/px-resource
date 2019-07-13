@@ -29,8 +29,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-action-list-angular",
-      "https://stackblitz.com/edit/pxblue-action-list-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-action-list-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-action-list-react"
+      }
     ]
   },
   {
@@ -63,8 +65,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-bottomsheet-angular",
-      "https://stackblitz.com/edit/pxblue-bottomsheet-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-bottomsheet-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-bottomsheet-react"
+      }
     ]
   },
   {
@@ -97,8 +101,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-collapsible-appbar-angular",
-      "https://stackblitz.com/edit/pxblue-collapsible-appbar-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-collapsible-appbar-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-collapsible-appbar-react"
+      }
     ]
   },
   {
@@ -131,8 +137,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-complex-bottomsheet-angular",
-      "https://stackblitz.com/edit/pxblue-complex-bottomsheet-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-complex-bottomsheet-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-complex-bottomsheet-react"
+      }
     ]
   },
   {
@@ -165,8 +173,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-data-list-angular",
-      "https://stackblitz.com/edit/pxblue-data-list-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-data-list-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-data-list-react"
+      }
     ]
   },
   {
@@ -199,8 +209,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-dynamic-stepper-angular",
-      "https://stackblitz.com/edit/pxblue-dynamic-stepper-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-dynamic-stepper-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-dynamic-stepper-react"
+      }
     ]
   },
   {
@@ -233,8 +245,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-icon-navigation-angular",
-      "https://stackblitz.com/edit/pxblue-icon-navigation-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-icon-navigation-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-icon-navigation-react"
+      }
     ]
   },
   {
@@ -267,8 +281,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-login-angular",
-      "https://stackblitz.com/edit/pxblue-login-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-login-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-login-react"
+      }
     ]
   },
   {
@@ -301,8 +317,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-multiselect-angular",
-      "https://stackblitz.com/edit/pxblue-multiselect-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-multiselect-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-multiselect-react"
+      }
     ]
   },
   {
@@ -335,8 +353,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-responsive-table-angular",
-      "https://stackblitz.com/edit/pxblue-responsive-table-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-responsive-table-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-responsive-table-react"
+      }
     ]
   },
   {
@@ -369,8 +389,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-search-bar-angular",
-      "https://stackblitz.com/edit/pxblue-search-bar-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-search-bar-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-search-bar-react"
+      }
     ]
   },
   {
@@ -403,8 +425,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-side-navigation-angular",
-      "https://stackblitz.com/edit/pxblue-side-navigation-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-side-navigation-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-side-navigation-react"
+      }
     ]
   },
   {
@@ -437,8 +461,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-sortable-list-angular",
-      "https://stackblitz.com/edit/pxblue-sortable-list-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-sortable-list-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-sortable-list-react"
+      }
     ]
   },
   {
@@ -471,8 +497,10 @@
       }
     ],
     "example": [
-      "https://stackblitz.com/edit/pxblue-status-list-angular",
-      "https://stackblitz.com/edit/pxblue-status-list-react"
+      {
+        "link1": "https://stackblitz.com/edit/pxblue-status-list-angular",
+        "link2": "https://stackblitz.com/edit/pxblue-status-list-react"
+      }
     ]
   }
 ]

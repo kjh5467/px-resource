@@ -1,1164 +1,136 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import {
   Table,
   TableHead,
   TableRow,
   TableCell,
   TableBody,
-  Link
+  Link,
+  Typography,
+  Collapse
 } from "@material-ui/core";
 
-const DesignTable = () => {
+import Icon from "@material-ui/core/Icon";
+
+import design from "../data/design";
+
+export default function DesignTable() {
+  const [expanded, setExpanded] = useState(false);
+
+  function handleClick(index) {
+    const c = { ...expanded };
+    c[index] = !c[index];
+    setExpanded(c);
+  }
+
   return (
     <Table>
       <TableHead>
         <TableRow>
           <TableCell>Repository</TableCell>
           <TableCell align="">Status</TableCell>
-          <TableCell align="">Updated</TableCell>
-          <TableCell align="">Issues</TableCell>
           <TableCell align="">Example</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/action-list"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              action-list
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/action-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/action-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>{" "}
-            <Link
-              href="https://circleci.com/gh/pxblue/action-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/action-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/action-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/action-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/action-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/action-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/action-list/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/action-list/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-action-list-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-action-list-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/bottomsheet"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              bottomsheet
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/bottomsheet/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/bottomsheet/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/bottomsheet/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/bottomsheet/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/bottomsheet/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/bottomsheet/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/bottomsheet/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/bottomsheet/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/bottomsheet/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/bottomsheet/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-bottomsheet-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-bottomsheet-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/collapsible-appbar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              collapsible-appbar
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/collapsible-appbar/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/collapsible-appbar/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-              <Link
-                href="https://circleci.com/gh/pxblue/collapsible-appbar/tree/react"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://img.shields.io/circleci/project/github/pxblue/collapsible-appbar/react.svg?label=React&amp;style=flat"
-                  alt=""
-                />
-              </Link>
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/collapsible-appbar/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/collapsible-appbar/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/collapsible-appbar/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/collapsible-appbar/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/collapsible-appbar/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/collapsible-appbar/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-collapsible-appbar-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-collapsible-appbar-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/complex-bottomsheet"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              complex-bottomsheet
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/complex-bottomsheet/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/complex-bottomsheet/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/complex-bottomsheet/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/complex-bottomsheet/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/complex-bottomsheet/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/complex-bottomsheet/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/complex-bottomsheet/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/complex-bottomsheet/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/complex-bottomsheet/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/complex-bottomsheet/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-complex-bottomsheet-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-complex-bottomsheet-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/data-list"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              data-list
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/data-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/data-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/data-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/data-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/data-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/data-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-              <Link
-                href="https://github.com/pxblue/dynamic-stepper/tree/react"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/react.svg?label=React&amp;style=flat"
-                  alt=""
-                />
-              </Link>
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/data-list/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/data-list/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-data-list-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-data-list-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/dynamic-stepper"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              dynamic-stepper
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/dynamic-stepper/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/dynamic-stepper/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/dynamic-stepper/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/dynamic-stepper/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/dynamic-stepper/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/dynamic-stepper/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/dynamic-stepper/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/dynamic-stepper/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/dynamic-stepper/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-dynamic-stepper-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-dynamic-stepper-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/icon-navigation"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              icon-navigation
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/icon-navigation/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/icon-navigation/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/icon-navigation/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/icon-navigation/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/icon-navigation/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/icon-navigation/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/icon-navigation/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/icon-navigation/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/icon-navigation/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/icon-navigation/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-icon-navigation-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-icon-navigation-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              login
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/login/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/login/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/login/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/login/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/login/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/login/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/login/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/login/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/login/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/login/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-login-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-login-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/multiselect-list"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              multiselect-list
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/multiselect-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/multiselect-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/multiselect-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/multiselect-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/multiselect-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/multiselect-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/multiselect-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/multiselect-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/multiselect-list/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/multiselect-list/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-multiselect-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-multiselect-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/responsive-table"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              responsive-table
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/responsive-table/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/responsive-table/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/responsive-table/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/responsive-table/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/responsive-table/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/responsive-table/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/responsive-table/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/responsive-table/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/responsive-table/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/responsive-table/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-responsive-table-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-responsive-table-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/search-bar"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              search-bar
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/search-bar/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/search-bar/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/search-bar/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/search-bar/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/search-bar/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/search-bar/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/search-bar/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/search-bar/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/search-bar/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/search-bar/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-search-bar-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-search-bar-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/side-navigation"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              side-navigation
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/side-navigation/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/side-navigation/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/side-navigation/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/side-navigation/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/side-navigation/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/side-navigation/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/side-navigation/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/side-navigation/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/side-navigation/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/side-navigation/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-side-navigation-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-side-navigation-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/sortable-list"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              sortable-list
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/sortable-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/sortable-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/sortable-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/sortable-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/sortable-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/sortable-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/sortable-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/sortable-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/sortable-list/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/sortable-list/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-sortable-list-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-sortable-list-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
-        <TableRow>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/status-list"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              status-list
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://circleci.com/gh/pxblue/status-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/status-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://circleci.com/gh/pxblue/status-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/circleci/project/github/pxblue/status-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/status-list/tree/angular"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/status-list/angular.svg?label=Angular&amp;style=flat"
-                alt=""
-              />
-            </Link>
-            <Link
-              href="https://github.com/pxblue/status-list/tree/react"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/last-commit/pxblue/status-list/react.svg?label=React&amp;style=flat"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://github.com/pxblue/status-list/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+label%3Abug"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://img.shields.io/github/issues/pxblue/status-list/bug.svg?style=flat&amp;label=bugs"
-                alt=""
-              />
-            </Link>
-          </TableCell>
-          <TableCell>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-status-list-angular"
-              rel="nofollow"
-            >
-              Angular
-            </Link>
-            <Link
-              href="https://stackblitz.com/edit/pxblue-status-list-react"
-              rel="nofollow"
-            >
-              React
-            </Link>
-          </TableCell>
-        </TableRow>
+        {design.map((repo, i) => {
+          return (
+            <Fragment>
+              <TableRow>
+                <TableCell>
+                  <Link
+                    href={repo.repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {repo.id}
+                  </Link>
+                </TableCell>
+                <TableCell>
+                  {repo.status.map((img, i) => {
+                    return (
+                      <Link
+                        href={img.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img src={img.img} alt="" />
+                      </Link>
+                    );
+                  })}
+                </TableCell>
+                <TableCell>
+                  {repo.example.map((link, i) => {
+                    return (
+                      <Fragment>
+                        <Link
+                          href={link.link1}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Angular
+                        </Link>
+                        <br />
+                        <Link
+                          href={link.link2}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          React
+                        </Link>
+                      </Fragment>
+                    );
+                  })}
+                </TableCell>
+                <TableCell button onClick={() => handleClick(i)}>
+                  {expanded[i] ? (
+                    <Icon>expand_less</Icon>
+                  ) : (
+                    <Icon>expand_more</Icon>
+                  )}
+                </TableCell>
+              </TableRow>
+              <Collapse in={expanded[i]} timeout="auto" unmountOnExit>
+                <TableHead>
+                  <TableCell align="left">Updated</TableCell>
+                  <TableCell align="left">Issues</TableCell>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <TableCell>
+                      {repo.updated.map((img, i) => {
+                        return (
+                          <Link
+                            href={img.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={img.img} alt="" />
+                          </Link>
+                        );
+                      })}
+                      <br />
+                    </TableCell>
+                    <TableCell>
+                      {repo.issues.map((img, i) => {
+                        return (
+                          <Link
+                            href={img.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={img.img} alt="" />
+                          </Link>
+                        );
+                      })}
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Collapse>
+            </Fragment>
+          );
+        })}
       </TableBody>
     </Table>
   );
-};
-
-export default DesignTable;
+}
