@@ -47,7 +47,7 @@ export default function DesignTable() {
                   </Link>
                 </TableCell>
                 <TableCell>
-                  {repo.status.map((img, i) => {
+                  {repo.status.map(img => {
                     return (
                       <Link
                         href={img.link}
@@ -60,7 +60,7 @@ export default function DesignTable() {
                   })}
                 </TableCell>
                 <TableCell>
-                  {repo.example.map((link, i) => {
+                  {repo.example.map(link => {
                     return (
                       <Fragment>
                         <Link
@@ -98,7 +98,7 @@ export default function DesignTable() {
                 <TableBody>
                   <TableRow>
                     <TableCell>
-                      {repo.updated.map((img, i) => {
+                      {repo.updated.map(img => {
                         return (
                           <Link
                             href={img.link}
@@ -109,10 +109,9 @@ export default function DesignTable() {
                           </Link>
                         );
                       })}
-                      <br />
                     </TableCell>
                     <TableCell>
-                      {repo.issues.map((img, i) => {
+                      {repo.issues.map(img => {
                         return (
                           <Link
                             href={img.link}

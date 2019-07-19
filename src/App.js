@@ -4,23 +4,23 @@ import "./App.css";
 
 //Components
 import { AppBar, Toolbar, Typography, Link } from "@material-ui/core";
-import SideBar from "./components/SideBar";
 import NpmTable from "./components/NpmTable";
 import DesignTable from "./components/DesignTable";
 import Footer from "./components/Footer";
+import SideNavigation from "./components/SideNavigation";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppBar position="sticky">
+        {/* <AppBar position="sticky">
           <Toolbar>
             <Typography variant="h6" color="inherit">
               Resources
             </Typography>
           </Toolbar>
-        </AppBar>
-        <SideBar position="sticky" />
+          </AppBar> */}
+        <SideNavigation position="sticky" />
         <Typography variant="h4" color="Primary" id="powerxpertblueresources">
           Power Xpert Blue Resources
         </Typography>
