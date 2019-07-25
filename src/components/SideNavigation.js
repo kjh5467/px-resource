@@ -20,6 +20,7 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 
+//styling
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex"
@@ -45,10 +46,6 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth
-  },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3)
   }
 }));
 
@@ -99,6 +96,9 @@ export default function ResponsiveDrawer(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar} />
+      <Link>
+        <img src="../media/eatongrey.c8ce891e.svg" />
+      </Link>
       <Divider />
       <List>
         {menuItem.map((item, index) => (
@@ -163,9 +163,6 @@ export default function ResponsiveDrawer(props) {
           </Drawer>
         </Hidden>
       </nav>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-      </main>
     </div>
   );
 }

@@ -39,7 +39,13 @@ export default function NpmTable() {
             <Fragment>
               <TableRow button onClick={() => handleClick(i)}>
                 <TableCell>
-                  <Link href={repo.repository}>{repo.id}</Link>
+                  <Link
+                    href={repo.repository}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {repo.id}
+                  </Link>
                 </TableCell>
                 <TableCell>
                   <Typography variant="p">{repo.description}</Typography>
@@ -47,7 +53,11 @@ export default function NpmTable() {
                 <TableCell>
                   {repo.npm.map((img, i) => {
                     return (
-                      <Link href={img.link}>
+                      <Link
+                        href={img.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={img.img} alt="" />
                       </Link>
                     );
@@ -74,7 +84,11 @@ export default function NpmTable() {
                     <TableCell>
                       {repo.status.map((img, i) => {
                         return (
-                          <Link href={img.link}>
+                          <Link
+                            href={img.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img src={img.img} alt="" />
                           </Link>
                         );
@@ -83,7 +97,11 @@ export default function NpmTable() {
                     <TableCell>
                       {repo.updated.map((img, i) => {
                         return (
-                          <Link href={img.link}>
+                          <Link
+                            href={img.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img src={img.img} alt="" />
                           </Link>
                         );
@@ -92,7 +110,11 @@ export default function NpmTable() {
                     <TableCell>
                       {repo.issues.map((img, i) => {
                         return (
-                          <Link href={img.link}>
+                          <Link
+                            href={img.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <img src={img.img} alt="" />
                           </Link>
                         );
