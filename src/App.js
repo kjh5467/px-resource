@@ -11,10 +11,16 @@ import Footer from "./components/Footer";
 import SideNavigation from "./components/SideNavigation";
 
 import styles from "./styles/styleClasses";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import {
+  makeStyles,
+  useTheme,
+  MuiThemeProvider,
+  createMuiTheme
+} from "@material-ui/core/styles";
 
 class App extends Component {
   render() {
+    const { classes } = this.props;
     return (
       <div className="App">
         {/* <AppBar position="sticky">
@@ -25,12 +31,15 @@ class App extends Component {
           </Toolbar>
           </AppBar> */}
         <SideNavigation position="sticky" />
-        <main className={styles.content}>
-          <div className={styles.appBarSpacer} />
-          <Typography variant="h4" color="Primary" id="powerxpertblueresources">
+        <main className={classes.content}>
+          <Typography
+            variant="h1"
+            color="Primary"
+            className={classes.powerxpertblueresources}
+          >
             Power Xpert Blue Resources
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" className={classes.body}>
             Power Xpert Blue offers a number of resources for developers,
             available through{" "}
             <Link
@@ -51,10 +60,10 @@ class App extends Component {
             . These include utility packages as well as sample code/design
             pattern examples.
           </Typography>
-          <Typography variant="h4" color="primary" id="npmpackages">
+          <Typography variant="h2" color="primary" className={classes.h2}>
             NPM Packages
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" className={classes.body}>
             The following table shows the current status for PX Blue resources
             available through NPM.
           </Typography>
@@ -62,10 +71,10 @@ class App extends Component {
           <p>
             <br />
           </p>
-          <Typography variant="h4" color="primary" id="designpatternsexamples">
+          <Typography variant="h2" color="primary" className={classes.h2}>
             Design Patterns / Examples
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" className={classes.body}>
             The following table shows the current status of the PX Blue design
             pattern code samples available from GitHub and{" "}
             <Link

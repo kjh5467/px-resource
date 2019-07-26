@@ -3,60 +3,29 @@
   method that allows for custom style overrides of the default component visuals.
 */
 import React from "react";
+import { fontSize, fontWeight } from "@material-ui/system";
 
 const styles = theme => ({
-  toolbar: {
-    paddingLeft: 0
-  },
-  drawer: {
-    maxWidth: "85%",
-    width: theme.spacing.unit * 45
-  },
-  header: {
-    height: "180px",
-    color: "white",
-    background: theme.palette.primary["500"],
-    padding: "16px"
-  },
-  listItem: {
-    paddingLeft: "15px",
-    paddingRight: "15px",
-    "&:hover": {
-      backgroundColor: "rgba(0, 0, 0, 0.08)"
-    }
-  },
-  listItemSelected: {
-    position: "relative",
-    "&:hover": {
-      backgroundColor: "transparent"
-    },
-    "&:before": {
-      content: '""',
-      zIndex: -1,
-      position: "absolute",
-      height: "100%",
-      width: "calc(100% - 8px)",
-      left: 0,
-      top: 0,
-      backgroundColor: theme.palette.primary["50"],
-      borderRadius: "0px 24px 24px 0px"
-    },
-    "&$open:hover:before": {
-      backgroundColor: theme.palette.primary["100"]
-    },
-    "& $listIcon": {
-      color: theme.palette.primary["500"]
-    }
-  },
-  listItemText: {
-    paddingLeft: "1px"
-  },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(4)
+    padding: theme.spacing(4),
+    paddingTop: "100px"
   },
-  appBarSpacer: {
-    appBarSpacer: theme.mixins.toolbar
+  powerxpertblueresources: {
+    marginBlockStart: ".67em",
+    marginBlockEnd: ".67em",
+    fontSize: "2rem",
+    fontWeight: "500"
+  },
+  body: {
+    marginBlockStart: "1em",
+    marginBlockEnd: "1em"
+  },
+  h2: {
+    fontWeight: "500",
+    fontSize: "1.5em",
+    marginBlockStart: ".83em",
+    marginBlockEnd: ".83em"
   },
   // these must be defined, even if empty so we can reference them in other nested rules
   listIcon: {},
