@@ -61,7 +61,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/bottomsheet/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/bottomsheet/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/bottomsheet/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -97,7 +97,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/collapsible-appbar/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/collapsible-appbar/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/collapsible-appbar/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -133,7 +133,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/complex-bottomsheet/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/complex-bottomsheet/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/complex-bottomsheet/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -169,7 +169,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/data-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/data-list/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/data-list/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -205,7 +205,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/dynamic-stepper/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/dynamic-stepper/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/dynamic-stepper/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -241,7 +241,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/icon-navigation/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/icon-navigation/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/icon-navigation/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -277,7 +277,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/login/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/login/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/login/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -313,7 +313,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/multiselect-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/multiselect-list/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/multiselect-list/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -349,7 +349,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/responsive-table/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/responsive-table/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/responsive-table/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -385,7 +385,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/search-bar/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/search-bar/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/search-bar/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -421,7 +421,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/side-navigation/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/side-navigation/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/side-navigation/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -457,7 +457,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/sortable-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/sortable-list/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/sortable-list/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [
@@ -493,7 +493,7 @@
     "issues": [
       {
         "link": "https://github.com/pxblue/status-list/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug",
-        "image": "https://img.shields.io/github/issues/pxblue/status-list/bug.svg?style=flat&label=bugs"
+        "img": "https://img.shields.io/github/issues/pxblue/status-list/bug.svg?style=flat&label=bugs"
       }
     ],
     "example": [

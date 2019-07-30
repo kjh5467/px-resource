@@ -28,8 +28,8 @@ export default function DesignTable() {
       <TableHead>
         <TableRow>
           <TableCell>Repository</TableCell>
-          <TableCell align="">Status</TableCell>
-          <TableCell align="">Example</TableCell>
+          <TableCell>Status</TableCell>
+          <TableCell>Example</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

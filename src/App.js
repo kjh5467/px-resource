@@ -34,7 +34,7 @@ class App extends Component {
         <main className={classes.content}>
           <Typography
             variant="h1"
-            color="Primary"
+            color="primary"
             className={classes.powerxpertblueresources}
           >
             Power Xpert Blue Resources
@@ -68,9 +68,9 @@ class App extends Component {
             available through NPM.
           </Typography>
           <NpmTable />
-          <p>
+          <div>
             <br />
-          </p>
+          </div>
           <Typography variant="h2" color="primary" className={classes.h2}>
             Design Patterns / Examples
           </Typography>

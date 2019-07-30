@@ -18,12 +18,29 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 
-const drawerWidth = 240;
+import { ReactComponent as PowerXpert } from "../media/pxblue.d5fa6462.svg";
+import { ReactComponent as EatonGrey } from "../media/eatongrey.c8ce891e.svg";
+
+const drawerWidth = 364;
 
 //styling
 const useStyles = makeStyles(theme => ({
   root: {
-    display: "flex"
+    display: "flex",
+    flexDirection: "column",
+    position: "fixed"
+  },
+  navContainer: {
+    height: "100%",
+    maxWidth: "90%"
+  },
+  listContainer: {
+    flexGrow: 1,
+    overflowY: "auto",
+    overflowX: "hidden",
+    marginLeft: "64px",
+    paddingTop: "8px",
+    paddingBottom: "8px"
   },
   drawer: {
     [theme.breakpoints.up("sm")]: {
@@ -46,6 +63,25 @@ const useStyles = makeStyles(theme => ({
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
     width: drawerWidth
+  },
+  eatonGrey: {
+    height: "50",
+    width: "auto"
+  },
+  sidebarFooter: {
+    flex: "0 0 auto",
+    display: "flex",
+    padding: "15px",
+    background: "#eef0f0",
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  xpertBlue: {
+    alignItems: "center",
+    position: "relative",
+    display: "flex",
+    paddingLeft: "24px",
+    paddingRight: "24px"
   }
 }));
 
@@ -94,13 +130,12 @@ export default function ResponsiveDrawer(props) {
   }
 
   const drawer = (
-    <div>
-      <div className={classes.toolbar} />
-      <Link>
-        <img src="../media/eatongrey.c8ce891e.svg" />
+    <div className={classes.navContainer}>
+      <Link href="https://pxblue.github.io/">
+        <PowerXpert className={classes.xpertBlue} />
       </Link>
       <Divider />
-      <List>
+      <List className={classes.listContainer}>
         {menuItem.map((item, index) => (
           <ListItem button key={item.title}>
             <Link href={item.link}>
@@ -110,6 +145,9 @@ export default function ResponsiveDrawer(props) {
         ))}
       </List>
       <Divider />
+      <div className={classes.sidebarFooter}>
+        <EatonGrey className={classes.eatonGrey} />
+      </div>
     </div>
   );
 

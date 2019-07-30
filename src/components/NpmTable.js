@@ -48,7 +48,7 @@ export default function NpmTable() {
                   </Link>
                 </TableCell>
                 <TableCell>
-                  <Typography variant="p">{repo.description}</Typography>
+                  <Typography variant="body1">{repo.description}</Typography>
                 </TableCell>
                 <TableCell>
                   {repo.npm.map((img, i) => {
