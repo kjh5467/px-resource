@@ -3,6 +3,8 @@ import { Link, Typography } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { textAlign } from "@material-ui/system";
 
+import { ReactComponent as EatonLogo } from "../media/EatonLogo.bb857d1a.svg";
+
 const useStyles = makeStyles(theme => ({
   footer: {
     padding: "2rem",
@@ -24,6 +26,9 @@ const Footer = () => {
         <br />
         <span>Learn more about our other offerings.</span>
       </Link>
+      <div>
+        <EatonLogo />
+      </div>
     </div>
   );
 };
