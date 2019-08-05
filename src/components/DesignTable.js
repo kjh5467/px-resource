@@ -6,7 +6,6 @@ import {
   TableCell,
   TableBody,
   Link,
-  Typography,
   Collapse
 } from "@material-ui/core";
 

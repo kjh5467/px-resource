@@ -32,10 +32,11 @@ const useStyles = makeStyles(theme => ({
   },
   navContainer: {
     height: "100%",
-    maxWidth: "90%"
+    display: "flex",
+    flexDirection: "column"
   },
   listContainer: {
-    flexGrow: 1,
+    flexGrow: "1",
     overflowY: "auto",
     overflowX: "hidden",
     marginLeft: "64px",
@@ -77,11 +78,20 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "center"
   },
   xpertBlue: {
-    alignItems: "center",
-    position: "relative",
+    width: "300px",
+    height: "auto",
+    marginLeft: "-5px",
+    transition: "all 150ms ease-in-out"
+  },
+  sidebarHeader: {
     display: "flex",
+    position: "relative",
+    alignItems: "center",
     paddingLeft: "24px",
-    paddingRight: "24px"
+    paddingRight: "24px",
+    [theme.breakpoints.up("sm")]: {
+      minHeight: "64px"
+    }
   }
 }));
 
@@ -131,9 +141,11 @@ export default function ResponsiveDrawer(props) {
 
   const drawer = (
     <div className={classes.navContainer}>
-      <Link href="https://pxblue.github.io/">
-        <PowerXpert className={classes.xpertBlue} />
-      </Link>
+      <div className={classes.sidebarHeader}>
+        <Link href="https://pxblue.github.io/">
+          <PowerXpert className={classes.xpertBlue} />
+        </Link>
+      </div>
       <Divider />
       <List className={classes.listContainer}>
         {menuItem.map((item, index) => (
@@ -152,7 +164,7 @@ export default function ResponsiveDrawer(props) {
   );
 
   return (
-    <div className={classes.root}>
+    <div>
       <CssBaseline />
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar>
@@ -170,7 +182,7 @@ export default function ResponsiveDrawer(props) {
           </Typography>
         </Toolbar>
       </AppBar>
-      <nav className={classes.drawer} aria-label="Mailbox folders">
+      <nav className={classes.drawer}>
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer

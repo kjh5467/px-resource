@@ -4,32 +4,19 @@ import { withStyles } from "@material-ui/core/styles";
 import "./App.css";
 
 //Components
-import { AppBar, Toolbar, Typography, Link } from "@material-ui/core";
+import { Typography, Link } from "@material-ui/core";
 import NpmTable from "./components/NpmTable";
 import DesignTable from "./components/DesignTable";
 import Footer from "./components/Footer";
 import SideNavigation from "./components/SideNavigation";
 
 import styles from "./styles/styleClasses";
-import {
-  makeStyles,
-  useTheme,
-  MuiThemeProvider,
-  createMuiTheme
-} from "@material-ui/core/styles";
 
 class App extends Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className="App">
-        {/* <AppBar position="sticky">
-          <Toolbar>
-            <Typography variant="h6" color="inherit">
-              Resources
-            </Typography>
-          </Toolbar>
-          </AppBar> */}
+      <div className={classes.App}>
         <SideNavigation position="sticky" />
         <main className={classes.content}>
           <Typography

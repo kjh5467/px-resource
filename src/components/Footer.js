@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, Typography } from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { textAlign } from "@material-ui/system";
+import { makeStyles } from "@material-ui/core/styles";
 
 import { ReactComponent as EatonLogo } from "../media/EatonLogo.bb857d1a.svg";
 
@@ -10,7 +9,15 @@ const useStyles = makeStyles(theme => ({
     padding: "2rem",
     textAlign: "center",
     borderTop: "1px solid",
-    flex: "0 0 auto"
+    flex: "0 0 auto",
+    justifyContent: "center",
+    [theme.breakpoints.up("sm")]: {
+      marginLeft: "365px"
+    }
+  },
+  footerLogo: {
+    marginTop: "20px",
+    paddingLeft: "44px"
   }
 }));
 
@@ -26,7 +33,7 @@ const Footer = () => {
         <br />
         <span>Learn more about our other offerings.</span>
       </Link>
-      <div>
+      <div className={classes.footerLogo}>
         <EatonLogo />
       </div>
     </div>
